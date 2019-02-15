@@ -8,6 +8,8 @@ Linux/Unix->
 rcnetwork restart  
 service network restart 
 /etc/init.d/network restart 
+
+/etc/init.d/networking restart  #ubuntu
 ***************************************************
 vi /etc/resolv.conf
 
