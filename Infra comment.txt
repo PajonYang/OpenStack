@@ -1,0 +1,135 @@
+Training video:
+\\Ostcnfs-01\OSTCDATA\Team\v-zhenpy\infra_training
+==================================================
+osinfsp-sol11-02
+VistaVerde#2
+==================================================
+\\redmond\wsscfs\OSTCNix
+\\redmond\wsscfs\OSTCData
+***************************************************
+Software Path:
+\\redmond\wsscfs\OSTCNix\Software
+***************************************************
+
+mount -o vers=3 osfiler:/OSTCNix /mnt
+cd /mnt/OSTCNix/Software/aix/AIX_7.1/
+***************************************************
+VHD Path:
+->PPC
+\\redmond\wsscfs\OSTCNix\Software\aix\
+
+\\ostcnfs-01\OSTCDATA\VMMLibrary
+***************************************************
+DNS Path:
+UNIX->	\\redmond\wsscfs\OSTCNix\DNS
+LINUX->	 git clone https://github.com/jeffaco/msft-updatedns.git updatedns
+/root/dns script works on the both Unix/Linux.
+
+Restart DNS:
+Win server-> 	ipconfig /flushdns
+Linux/Unix->	
+rcnetwork restart  
+service network restart 
+/etc/init.d/network restart 
+***************************************************
+vi /etc/resolv.conf
+
+domain scx.com
+search scx.com
+nameserver 10.228.124.13
+nameserver 10.128.65.11
+***************************************************
+Modify firewall for SUSE!:
+systemctl stop SuSEfirewall2.service
+systemctl disable SuSEfirewall2.service
+systemctl enable SuSEfirewall2.service
+systemctl start SuSEfirewall2.service
+***************************************************
+OpenSSH:
+check status:	lssrc -g ssh
+
+******************************************************************************************************
+Doc:
+\\redmond\wsscfs\OSTCNix\Software
+
+\\Ostcnfs-01\OSTCDATA\Team\SCXCM
+
+----------------------------------------------------
+Here is the HMC IP addresses:
+10.193.246.99  https://10.193.246.99/preloginmonitor/index.jsp 
+10.193.246.12 https://10.193.246.12/preloginmonitor/index.jsp
+
+User UD: hscroot
+Password:VistaVerde#1
+
+VIOserver
+padmin/VistaVerdE#1
+
+----------------------------------------------------
+key of windows server 2012 R2:
+MR88Y-BXNRY-VH3DR-349CB-3GK8M
+----------------------------------------------------
+Repos path:
+/etc/yum.repos.d/
+
+Hima Github:
+https://github.com/higadupu/msft-updatedns#using-gui
+----------------------------------------------------
+mount osfiler:/OSTCNix /mnt/OSTCNix
+==========
+mount -o vers=3 osfiler:/OSTCNix /mnt
+mount osfiler:/OSTCNix/Software/solaris/Golden_Images/
+
+cp /mnt/OSTCNix/Software/aix/LinuxPPC/SLE-12-Server-DVD-ppc64le-GM-DVD1.iso /tmp/sles12ppc.iso 
+cp /mnt/OSTCNix/Software/aix/LinuxPPC/SLE-12-Server-DVD-ppc64le-GM-DVD1.iso /tmp/
+
+lsmap -all
+rmvdev -f -vtd vtopt2
+----------------------------------------------------
+open ticket:
+https://microsoft.service-now.com/mls?id=mls_catalog
+----------------------------------------------------
+Check HP-UX IP Address and Subnet Mask
+netstat -in
+----------------------------------------------------
+oshv-01/02/03/04/05/06 servers
+----------------------------------------------------
+Check the binary is 64 bit:
+file /usr/bin/openssl
+dump -ov -X64 /opt/omi/bin/omiserver
+
+Check linux system bit:
+getconf LONG_BIT
+->Solaris
+(-v for application, -b for Operating System)
+	isainfo -v 
+	isainfo -b 
+----------------------------------------------------
+Check solaris openssl version:
+/usr/sfw/bin/openssl version
+----------------------------------------------------
+
+Suse source download
+https://software.opensuse.org/
+https://rpmfind.net/linux/rpm2html/search.php?query=pam-devel
+https://opensuse.pkgs.org/42.3/opensuse-oss/glibc-2.22-8.4.x86_64.rpm.html
+
+
+WebSite:
+10.193.246.99  https://10.193.246.99/preloginmonitor/index.jsp 
+10.193.246.12 https://10.193.246.12/preloginmonitor/index.jsp
+
+Osinfsp-sol11-01
+ILOM IP address: 10.193.246.11
+Ilom Link: https://10.193.246.11/iPages/i_login.asp?msg=7
+Username: root
+Password: changeme
+
+Osinfsp-sol11-02
+ILOM IP address: 10.193.246.39
+https://10.193.246.39/iPages/suntab.asp
+
+Check command on aix7:
+lslpp -w /usr/include/sys/cdli_entuser.shient.h
+lslpp -L all | grep devices.ethernet.shi.rte
+
