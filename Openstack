@@ -9,3 +9,24 @@ https://www.cnblogs.com/CloudMan6/p/5240770.html
 网桥的配置得写到/etc/sysconfig/networking-scripts/下的配置文件中
 brctl show
 
+backup commands:
+sudo mkdir /mnt/shared
+sudo mount –t vboxsf ShareFolder /mnt/shared
+sudo gedit /etc/fstab
+
+ShareFolder /mnt/shared vboxsf rw,gid=100,uid=1000,auto 0 0
+cd /mnt/shared
+
+git clone https://git.openstack.org/cgit/openstack-dev/devstack/
+
+data path:
+/home/openstack/devstack
+
+issue：
+touch: cannot touch '/home/openstack/devstack/.localrc.password': Permission denied
+Error on exit
+/usr/bin/env: ‘python’: No such file or directory
+
+
+chown -R stack:stack devstack
+https://www.cnblogs.com/dee0912/p/5470700.html
