@@ -1,0 +1,24 @@
+https://blog.csdn.net/wenwenxiong/article/details/52937539
+
+sudo nano /etc/default/grub 
+找到GRUB_CMDLINE_LINUX=""
+改为GRUB_CMDLINE_LINUX="net.ifnames=0 biosdevname=0"
+然后sudo grub-mkconfig -o /boot/grub/grub.cfg
+重启后，网卡名称果然变成了eth0和wlan01234
+
+2、打开ubuntu的/etc/network/interfaces文件默认的内容如下：
+
+auto lo
+iface lo inet loopback12
+
+在后面添加内容 
+1、获取动态配置：
+auto eth0
+iface eth0 inet dhcp12
+
+2、获取静态配置：
+auto eth0
+iface eth0 inet static
+address 192.168.0.1
+netmask 255.255.255.0
+gateway 192.168.0.1
