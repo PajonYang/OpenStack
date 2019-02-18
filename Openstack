@@ -30,3 +30,10 @@ Error on exit
 
 chown -R stack:stack devstack
 https://www.cnblogs.com/dee0912/p/5470700.html
+
+Clean dns crash:
+Windows:
+ipconfig /flushdns
+
+Linux:
+/etc/init.d/nscd restart
