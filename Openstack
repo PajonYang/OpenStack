@@ -5,3 +5,7 @@ https://blog.csdn.net/u012732259/article/details/70172704
 
 #CloudMan
 https://www.cnblogs.com/CloudMan6/p/5240770.html
+
+网桥的配置得写到/etc/sysconfig/networking-scripts/下的配置文件中
+brctl show
+
