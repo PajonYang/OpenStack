@@ -1,0 +1,35 @@
+#!/bin/sh
+i=0
+while [ $i -lt 9 ]
+do
+   lan=`/etc/ifconfig en${i} 2> /dev/null`
+   if [ "${lan}" = "" ];then
+      i=`expr ${i} + 1`
+   else   
+      IP=`/etc/ifconfig en${i} | grep inet | grep -v inet6 | /usr/bin/sed -e 's/inet//g' | awk '{print $1}'`
+      break
+   fi
+done
+HOST=`hostname`
+echo "`date` - Updating DNS with HOST - $HOST and IP - $IP" > /root/IP.txt
+
+/usr/sbin/nsupdate9 << EOF >> /root/IP.txt 2>&1
+server 10.228.124.13 
+zone scx.com
+update delete ${HOST}.scx.com. A
+update add ${HOST}.scx.com. 86400 A ${IP}
+show
+send
+EOF
+
+REV=`echo $IP | awk -F. '{print $3"."$2"."$1}'`
+LAST=`echo $IP | awk -F. '{print $4}'`
+
+/usr/sbin/nsupdate9 << EOF >> /root/IP.txt 2>&1
+server 10.228.124.13
+zone ${REV}.in-addr.arpa
+update delete ${LAST}.${REV}.in-addr.arpa PTR
+update add ${LAST}.${REV}.in-addr.arpa 86400 PTR ${HOST}.scx.com.
+show
+send
+EOF
