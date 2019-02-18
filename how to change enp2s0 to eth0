@@ -22,3 +22,14 @@ iface eth0 inet static
 address 192.168.0.1
 netmask 255.255.255.0
 gateway 192.168.0.1
+
+ubuntu18.04修改网卡名称为eth0 
+【https://www.cnblogs.com/omgasw/archive/2019/01/25/10318891.html】
+
+重启后获取不到ip地址，ifconfig -a发现网卡地址已经改成eth0，但是无法连网，还需进行以下步骤
+3.修改网络配置ens32为eth0
+vim /etc/netplan/01-netcfg.yaml
+ 
+ 
+4.最后重启即可修改网卡为eth0
+init 6
