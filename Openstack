@@ -19,6 +19,9 @@ cd /mnt/shared
 
 git clone https://git.openstack.org/cgit/openstack-dev/devstack/
 
+git clone git://git.openstack.org/openstack-dev/devstack
+git clone https://github.com/openstack-dev/devstack.git
+
 data path:
 /home/openstack/devstack
 
