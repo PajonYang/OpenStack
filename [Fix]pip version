@@ -1,0 +1,72 @@
+Devstack安装openstack\ocata ，出现错误Currently installed pip version 1 does not meet minimum requirements
+
+错误日志：
+
+[Call Trace]
+/opt/stack/devstack/tools/install_pip.sh:150:pip_install_gr
+/opt/stack/devstack/inc/python:69:pip_install
+/opt/stack/devstack/inc/python:213:die[ERROR] /opt/stack/devstack/inc/python:213 Currently installed pip version 1 does not meet minimum requirements (>=6).
+++./stack.sh:main:736                       err_trap
+++./stack.sh:err_trap:524                   local r=1
+++./stack.sh:err_trap:525                   set +o xtrace
+stack.sh failed
+Error on exit
+
+World dumping... see /opt/stack/logs/worlddump-2018-04-19-071957.txt for details
+
+问题原因：
+
+    在最新的openstack版本中，源码有所改动。
+
+改动位置在以下文件中：
+
+    /opt/stack/devstack/inc/python
+
+解决方案：
+
+打开配置文件
+
+    sudo vim /opt/stack/devstack/inc/python
+
+将以下内容中的‘strip’改为‘split’，即可。
+
+The code in '/opt/stack/devstack/inc/python' line 142 to 148
+
+ local pip_version
+
+    pip_version=$(python -c "import pip; \
+
+                        print(pip.__version__.strip('.')[0])") （将原‘strip’改为‘split’）
+
+    if (( pip_version<6 )); then
+
+        die $LINENO "Currently installed pip version ${pip_version} does not" \
+
+            "meet minimum requirements (>=6)."
+
+    fi
+
+When the pip version >10, the resule of 'pip.__version__.strip('.')[0]' is 1, then the error happen.（删除改行）
+
+改完之后:
+
+The code should be:
+
+local pip_version
+
+    pip_version=$(python -c "import pip; \
+
+                        print(pip.__version__.split('.')[0])")
+
+    if (( pip_version<6 )); then
+
+        die $LINENO "Currently installed pip version ${pip_version} does not" \
+
+            "meet minimum requirements (>=6)."
+
+    fi
+--------------------- 
+作者：zsWang9 
+来源：CSDN 
+原文：https://blog.csdn.net/zsWang9/article/details/80006007 
+版权声明：本文为博主原创文章，转载请附上博文链接！
