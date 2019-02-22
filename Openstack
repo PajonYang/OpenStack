@@ -1,4 +1,4 @@
-#Copied for Dicey:
+#:
 https://www.ubuntu.com/download/desktop
 https://www.virtualbox.org/wiki/Downloads
 https://blog.csdn.net/u012732259/article/details/70172704
@@ -6,8 +6,18 @@ https://blog.csdn.net/u012732259/article/details/70172704
 #CloudMan
 https://www.cnblogs.com/CloudMan6/p/5240770.html
 
-网桥的配置得写到/etc/sysconfig/networking-scripts/下的配置文件中
-brctl show
+https://blog.csdn.net/Alener/article/details/80648718
+参考的网址：
+1.ubuntu18.04系统下用devstack安装openstack(最新版)
+  https://blog.csdn.net/hunjiancuo5340/article/details/85005995
+2.
+
+
+
+遇到的问题：
+解决1：echo 'WARNING: this script has not been tested on bionic'，也就是没在ub18上测试过
+vim stack.sh 
+if [[ ! ${DISTRO} =~ (xenial|artful|bionic|stretch|jessie|f25|f26|f27|opensuse-42.3|opensuse-tumbleweed|rhel7) ]]; then
 
 backup commands:
 sudo mkdir /mnt/shared
