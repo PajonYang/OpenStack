@@ -1,0 +1,75 @@
+1、修改主机名
+vim /etc/hostname
+devstack-controller
+Vim /etc/hosts
+192.168.104.10 devstack-controller
+
+vim /etc/hostname
+devstack-compute
+Vim /etc/hosts
+192.168.104.11 devstack-compute
+
+
+2、更换apt 源为ubuntu 16阿里云源。
+# deb cdrom:[Ubuntu 16.04 LTS _Xenial Xerus_ - Release amd64 (20160420.1)]/ xenial main restricted
+deb-src http://archive.ubuntu.com/ubuntu xenial main restricted #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial main restricted multiverse universe #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-updates main restricted multiverse universe #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-updates multiverse
+deb http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-backports main restricted universe multiverse #Added by software-properties
+deb http://archive.canonical.com/ubuntu xenial partner
+deb-src http://archive.canonical.com/ubuntu xenial partner
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted
+deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security main restricted multiverse universe #Added by software-properties
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security universe
+deb http://mirrors.aliyun.com/ubuntu/ xenial-security multiverse
+
+更新apt update
+
+3、安装Pip
+apt install -y python-pip
+pip install --upgrade pip 
+pip install -U os-testr
+
+4、下载pike版本devstack
+apt install git -y
+git clone https://git.openstack.org/openstack-dev/devstack -b stable/pike
+
+5、修改Pip源，在Root和stack家目录下
+mkdir ~/.pip 
+vim ~/.pip/pip.conf
+[global] 
+trusted-host =  pypi.douban.com 
+index-url = http://pypi.douban.com/simple
+
+
+6、cd 到files目录下手动下载两个压缩包防止超时报错
+cd devstack/files/
+
+wget -c https://github.com/coreos/etcd/releases/download/v3.1.10/etcd-v3.1.10-linux-amd64.tar.gz
+
+wget -c https://github.com/coreos/etcd/releases/download/v3.1.7/etcd-v3.1.7-linux-amd64.tar.gz
+
+7、如果报错如下
+device br-ex already exists; can't create bridge with the same name
+则删除已有网桥sudo brctl delbr br-ex，再次执行./stack.sh
+
+
+8、如果报错No matching distribution found for debtcollector===1.19.0
+
+更换pip源为清华大学 
+[global] 
+trusted-host =  pypi.tuna.tsinghua.edu.cn
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
+
+
+9、如果报错Didn't find service registered by hostname after 60 seconds
+在local.conf中加入enable_service placement-api
+
+10、部署完controller，不需要重启（重启后需要重新跑./stack.sh不然openstack不会启动），直接部署compute
