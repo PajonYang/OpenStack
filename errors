@@ -1,0 +1,596 @@
+Failed building wheel for cryptography
+  Running setup.py clean for cryptography
+Failed to build cryptography
+oslo-upgradecheck 0.2.0 has requirement oslo.config>=5.2.0, but you'll have oslo-config 3.17.1 which is incompatible.
+oslo-upgradecheck 0.2.0 has requirement oslo.i18n>=3.15.3, but you'll have oslo-i18n 3.9.0 which is incompatible.
+keystone 14.1.0.dev646 has requirement cryptography>=2.1, but you'll have cryptography 1.5 which is incompatible.
+keystone 14.1.0.dev646 has requirement Flask!=0.11,>=1.0.2, but you'll have flask 0.11.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement jsonschema<3.0.0,>=2.6.0, but you'll have jsonschema 2.5.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement keystonemiddleware>=5.1.0, but you'll have keystonemiddleware 4.9.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.cache>=1.26.0, but you'll have oslo-cache 1.14.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.concurrency>=3.26.0, but you'll have oslo-concurrency 3.14.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.config>=5.2.0, but you'll have oslo-config 3.17.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.context>=2.22.0, but you'll have oslo-context 2.9.0 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.db>=4.27.0, but you'll have oslo-db 4.13.6 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.i18n>=3.15.3, but you'll have oslo-i18n 3.9.0 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.log>=3.38.0, but you'll have oslo-log 3.16.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.messaging>=5.29.0, but you'll have oslo-messaging 5.10.2 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.middleware>=3.31.0, but you'll have oslo-middleware 3.19.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.policy>=1.43.1, but you'll have oslo-policy 1.14.0 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.serialization!=2.19.1,>=2.18.0, but you'll have oslo-serialization 2.13.2 which is incompatible.
+keystone 14.1.0.dev646 has requirement oslo.utils>=3.33.0, but you'll have oslo-utils 3.16.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement passlib>=1.7.0, but you'll have passlib 1.6.5 which is incompatible.
+keystone 14.1.0.dev646 has requirement pbr!=2.1.0,>=2.0.0, but you'll have pbr 1.10.0 which is incompatible.
+keystone 14.1.0.dev646 has requirement PyJWT>=1.6.1, but you'll have pyjwt 1.4.2 which is incompatible.
+keystone 14.1.0.dev646 has requirement pysaml2>=4.5.0, but you'll have pysaml2 4.0.2 which is incompatible.
+keystone 14.1.0.dev646 has requirement python-keystoneclient>=3.8.0, but you'll have python-keystoneclient 3.5.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement SQLAlchemy>=1.1.0, but you'll have sqlalchemy 1.0.14 which is incompatible.
+keystone 14.1.0.dev646 has requirement sqlalchemy-migrate>=0.11.0, but you'll have sqlalchemy-migrate 0.10.0 which is incompatible.
+keystone 14.1.0.dev646 has requirement stevedore>=1.20.0, but you'll have stevedore 1.17.1 which is incompatible.
+keystone 14.1.0.dev646 has requirement WebOb>=1.7.1, but you'll have webob 1.6.1 which is incompatible.
+stestr 2.2.0 has requirement pbr!=2.1.0,!=4.0.0,!=4.0.1,!=4.0.2,!=4.0.3,>=2.0.0, but you'll have pbr 1.10.0 which is incompatible.
+stestr 2.2.0 has requirement python-subunit>=1.3.0, but you'll have python-subunit 1.2.0 which is incompatible.
+cliff 2.14.0 has requirement pbr!=2.1.0,>=2.0.0, but you'll have pbr 1.10.0 which is incompatible.
+cliff 2.14.0 has requirement stevedore>=1.20.0, but you'll have stevedore 1.17.1 which is incompatible.
+Installing collected packages: cryptography, SQLAlchemy, sqlparse, Tempita, decorator, sqlalchemy-migrate, passlib, bcrypt, scrypt, python-dateutil, pyinotify, oslo.log, dogpile.cache, oslo.cache, fasteners, retrying, oslo.concurrency, greenlet, cachetools, eventlet, Paste, PasteDeploy, repoze.lru, Routes, oslo.service, contextlib2, futures, futurist, pika, amqp, anyjson, kombu, PyYAML, oslo.middleware, pika-pool, oslo.messaging, python-editor, Mako, alembic, oslo.db, oslo.policy, oslo.upgradecheck, oauthlib, zope.interface, repoze.who, pyOpenSSL, pysaml2, PyJWT, functools32, jsonschema, msgpack, osprofiler, keystone
+  Found existing installation: cryptography 2.1.4
+    Uninstalling cryptography-2.1.4:
+      Successfully uninstalled cryptography-2.1.4
+  Running setup.py install for cryptography ... error
+    Complete output from command /usr/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-Xc8lEE/cryptography/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-_j4fLf/install-record.txt --single-version-externally-managed --compile:
+    running install
+    running build
+    running build_py
+    creating build
+    creating build/lib.linux-x86_64-2.7
+    creating build/lib.linux-x86_64-2.7/cryptography
+    copying src/cryptography/utils.py -> build/lib.linux-x86_64-2.7/cryptography
+    copying src/cryptography/__about__.py -> build/lib.linux-x86_64-2.7/cryptography
+    copying src/cryptography/fernet.py -> build/lib.linux-x86_64-2.7/cryptography
+    copying src/cryptography/__init__.py -> build/lib.linux-x86_64-2.7/cryptography
+    copying src/cryptography/exceptions.py -> build/lib.linux-x86_64-2.7/cryptography
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat
+    copying src/cryptography/hazmat/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat
+    creating build/lib.linux-x86_64-2.7/cryptography/x509
+    copying src/cryptography/x509/base.py -> build/lib.linux-x86_64-2.7/cryptography/x509
+    copying src/cryptography/x509/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/x509
+    copying src/cryptography/x509/name.py -> build/lib.linux-x86_64-2.7/cryptography/x509
+    copying src/cryptography/x509/general_name.py -> build/lib.linux-x86_64-2.7/cryptography/x509
+    copying src/cryptography/x509/extensions.py -> build/lib.linux-x86_64-2.7/cryptography/x509
+    copying src/cryptography/x509/oid.py -> build/lib.linux-x86_64-2.7/cryptography/x509
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings
+    copying src/cryptography/hazmat/bindings/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/serialization.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/keywrap.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/cmac.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/constant_time.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/hmac.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/hashes.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    copying src/cryptography/hazmat/primitives/padding.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/backends
+    copying src/cryptography/hazmat/backends/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends
+    copying src/cryptography/hazmat/backends/multibackend.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends
+    copying src/cryptography/hazmat/backends/interfaces.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/commoncrypto
+    copying src/cryptography/hazmat/bindings/commoncrypto/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/commoncrypto
+    copying src/cryptography/hazmat/bindings/commoncrypto/binding.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/commoncrypto
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/openssl
+    copying src/cryptography/hazmat/bindings/openssl/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/openssl
+    copying src/cryptography/hazmat/bindings/openssl/_conditional.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/openssl
+    copying src/cryptography/hazmat/bindings/openssl/binding.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/bindings/openssl
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/twofactor
+    copying src/cryptography/hazmat/primitives/twofactor/utils.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/twofactor
+    copying src/cryptography/hazmat/primitives/twofactor/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/twofactor
+    copying src/cryptography/hazmat/primitives/twofactor/totp.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/twofactor
+    copying src/cryptography/hazmat/primitives/twofactor/hotp.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/twofactor
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    copying src/cryptography/hazmat/primitives/kdf/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    copying src/cryptography/hazmat/primitives/kdf/x963kdf.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    copying src/cryptography/hazmat/primitives/kdf/hkdf.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    copying src/cryptography/hazmat/primitives/kdf/pbkdf2.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    copying src/cryptography/hazmat/primitives/kdf/kbkdf.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    copying src/cryptography/hazmat/primitives/kdf/concatkdf.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/kdf
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/interfaces
+    copying src/cryptography/hazmat/primitives/interfaces/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/interfaces
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/utils.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/dsa.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/ec.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/dh.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/rsa.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    copying src/cryptography/hazmat/primitives/asymmetric/padding.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/asymmetric
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/ciphers
+    copying src/cryptography/hazmat/primitives/ciphers/base.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/ciphers
+    copying src/cryptography/hazmat/primitives/ciphers/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/ciphers
+    copying src/cryptography/hazmat/primitives/ciphers/modes.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/ciphers
+    copying src/cryptography/hazmat/primitives/ciphers/algorithms.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/primitives/ciphers
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/commoncrypto
+    copying src/cryptography/hazmat/backends/commoncrypto/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/commoncrypto
+    copying src/cryptography/hazmat/backends/commoncrypto/ciphers.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/commoncrypto
+    copying src/cryptography/hazmat/backends/commoncrypto/hmac.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/commoncrypto
+    copying src/cryptography/hazmat/backends/commoncrypto/hashes.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/commoncrypto
+    copying src/cryptography/hazmat/backends/commoncrypto/backend.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/commoncrypto
+    creating build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/utils.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/__init__.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/x509.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/decode_asn1.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/ciphers.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/cmac.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/dsa.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/ec.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/encode_asn1.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/hmac.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/hashes.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/backend.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    copying src/cryptography/hazmat/backends/openssl/rsa.py -> build/lib.linux-x86_64-2.7/cryptography/hazmat/backends/openssl
+    running egg_info
+    writing requirements to src/cryptography.egg-info/requires.txt
+    writing src/cryptography.egg-info/PKG-INFO
+    writing top-level names to src/cryptography.egg-info/top_level.txt
+    writing dependency_links to src/cryptography.egg-info/dependency_links.txt
+    writing entry points to src/cryptography.egg-info/entry_points.txt
+    reading manifest file 'src/cryptography.egg-info/SOURCES.txt'
+    reading manifest template 'MANIFEST.in'
+    no previously-included directories found matching 'docs/_build'
+    warning: no previously-included files matching '*' found under directory 'vectors'
+    writing manifest file 'src/cryptography.egg-info/SOURCES.txt'
+    running build_ext
+    generating cffi module 'build/temp.linux-x86_64-2.7/_padding.c'
+    creating build/temp.linux-x86_64-2.7
+    generating cffi module 'build/temp.linux-x86_64-2.7/_constant_time.c'
+    generating cffi module 'build/temp.linux-x86_64-2.7/_openssl.c'
+    building '_openssl' extension
+    creating build/temp.linux-x86_64-2.7/build
+    creating build/temp.linux-x86_64-2.7/build/temp.linux-x86_64-2.7
+    x86_64-linux-gnu-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-3hk45v/python2.7-2.7.15~rc1=. -fstack-protector-strong -Wformat -Werror=format-security -fPIC -I/usr/include/python2.7 -c build/temp.linux-x86_64-2.7/_openssl.c -o build/temp.linux-x86_64-2.7/build/temp.linux-x86_64-2.7/_openssl.o
+    build/temp.linux-x86_64-2.7/_openssl.c:653:23: error: conflicting types for 'ASN1_TIME_to_generalizedtime'
+     ASN1_GENERALIZEDTIME *ASN1_TIME_to_generalizedtime(ASN1_TIME *,
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    In file included from build/temp.linux-x86_64-2.7/_openssl.c:462:0:
+    /usr/include/openssl/asn1.h:628:23: note: previous declaration of 'ASN1_TIME_to_generalizedtime' was here
+     ASN1_GENERALIZEDTIME *ASN1_TIME_to_generalizedtime(const ASN1_TIME *t,
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_ASN1_STRING_data':
+    build/temp.linux-x86_64-2.7/_openssl.c:13460:3: warning: 'ASN1_STRING_data' is deprecated [-Wdeprecated-declarations]
+       return ASN1_STRING_data(x0);
+       ^~~~~~
+    In file included from /usr/include/openssl/bn.h:31:0,
+                     from /usr/include/openssl/asn1.h:24,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:462:
+    /usr/include/openssl/asn1.h:553:1: note: declared here
+     DEPRECATEDIN_1_1_0(unsigned char *ASN1_STRING_data(ASN1_STRING *x))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_ASN1_STRING_data':
+    build/temp.linux-x86_64-2.7/_openssl.c:13483:3: warning: 'ASN1_STRING_data' is deprecated [-Wdeprecated-declarations]
+       { result = ASN1_STRING_data(x0); }
+       ^
+    In file included from /usr/include/openssl/bn.h:31:0,
+                     from /usr/include/openssl/asn1.h:24,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:462:
+    /usr/include/openssl/asn1.h:553:1: note: declared here
+     DEPRECATEDIN_1_1_0(unsigned char *ASN1_STRING_data(ASN1_STRING *x))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_f_buffer':
+    build/temp.linux-x86_64-2.7/_openssl.c:14877:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_f_buffer();
+              ^~~~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_f_buffer':
+    build/temp.linux-x86_64-2.7/_openssl.c:14887:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_f_buffer(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_f_null':
+    build/temp.linux-x86_64-2.7/_openssl.c:14901:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_f_null();
+              ^~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_f_null':
+    build/temp.linux-x86_64-2.7/_openssl.c:14911:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_f_null(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_s_fd':
+    build/temp.linux-x86_64-2.7/_openssl.c:16410:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_s_fd();
+              ^~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_s_fd':
+    build/temp.linux-x86_64-2.7/_openssl.c:16420:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_s_fd(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_s_file':
+    build/temp.linux-x86_64-2.7/_openssl.c:16434:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_s_file();
+              ^~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_s_file':
+    build/temp.linux-x86_64-2.7/_openssl.c:16444:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_s_file(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_s_mem':
+    build/temp.linux-x86_64-2.7/_openssl.c:16458:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_s_mem();
+              ^~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_s_mem':
+    build/temp.linux-x86_64-2.7/_openssl.c:16468:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_s_mem(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_s_null':
+    build/temp.linux-x86_64-2.7/_openssl.c:16482:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_s_null();
+              ^~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_s_null':
+    build/temp.linux-x86_64-2.7/_openssl.c:16492:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_s_null(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_BIO_s_socket':
+    build/temp.linux-x86_64-2.7/_openssl.c:16506:10: warning: return discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       return BIO_s_socket();
+              ^~~~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_BIO_s_socket':
+    build/temp.linux-x86_64-2.7/_openssl.c:16516:12: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+       { result = BIO_s_socket(); }
+                ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_DTLSv1_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:23383:3: warning: 'DTLSv1_client_method' is deprecated [-Wdeprecated-declarations]
+       return DTLSv1_client_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1644:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_client_method(void)) /* DTLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_DTLSv1_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:23393:3: warning: 'DTLSv1_client_method' is deprecated [-Wdeprecated-declarations]
+       { result = DTLSv1_client_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1644:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_client_method(void)) /* DTLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_DTLSv1_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:23407:3: warning: 'DTLSv1_method' is deprecated [-Wdeprecated-declarations]
+       return DTLSv1_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1642:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_method(void)) /* DTLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_DTLSv1_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:23417:3: warning: 'DTLSv1_method' is deprecated [-Wdeprecated-declarations]
+       { result = DTLSv1_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1642:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_method(void)) /* DTLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_DTLSv1_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:23431:3: warning: 'DTLSv1_server_method' is deprecated [-Wdeprecated-declarations]
+       return DTLSv1_server_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1643:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_server_method(void)) /* DTLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_DTLSv1_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:23441:3: warning: 'DTLSv1_server_method' is deprecated [-Wdeprecated-declarations]
+       { result = DTLSv1_server_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1643:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *DTLSv1_server_method(void)) /* DTLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_OPENSSL_config':
+    build/temp.linux-x86_64-2.7/_openssl.c:40998:3: warning: 'OPENSSL_config' is deprecated [-Wdeprecated-declarations]
+       OPENSSL_config(x0);
+       ^~~~~~~~~~~~~~
+    In file included from /usr/include/openssl/x509_vfy.h:20:0,
+                     from /usr/include/openssl/x509.h:309,
+                     from /usr/include/openssl/cms.h:16,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/conf.h:92:1: note: declared here
+     DEPRECATEDIN_1_1_0(void OPENSSL_config(const char *config_name))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_OPENSSL_config':
+    build/temp.linux-x86_64-2.7/_openssl.c:41020:3: warning: 'OPENSSL_config' is deprecated [-Wdeprecated-declarations]
+       { OPENSSL_config(x0); }
+       ^
+    In file included from /usr/include/openssl/x509_vfy.h:20:0,
+                     from /usr/include/openssl/x509.h:309,
+                     from /usr/include/openssl/cms.h:16,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/conf.h:92:1: note: declared here
+     DEPRECATEDIN_1_1_0(void OPENSSL_config(const char *config_name))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_1_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:54977:3: warning: 'TLSv1_1_client_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_1_client_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1632:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_client_method(void)) /* TLSv1.1 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_1_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:54987:3: warning: 'TLSv1_1_client_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_1_client_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1632:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_client_method(void)) /* TLSv1.1 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_1_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55001:3: warning: 'TLSv1_1_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_1_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1630:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_method(void)) /* TLSv1.1 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_1_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55011:3: warning: 'TLSv1_1_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_1_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1630:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_method(void)) /* TLSv1.1 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_1_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55025:3: warning: 'TLSv1_1_server_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_1_server_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1631:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_server_method(void)) /* TLSv1.1 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_1_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55035:3: warning: 'TLSv1_1_server_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_1_server_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1631:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_1_server_method(void)) /* TLSv1.1 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_2_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55049:3: warning: 'TLSv1_2_client_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_2_client_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1638:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_client_method(void)) /* TLSv1.2 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_2_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55059:3: warning: 'TLSv1_2_client_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_2_client_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1638:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_client_method(void)) /* TLSv1.2 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_2_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55073:3: warning: 'TLSv1_2_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_2_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1636:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_method(void)) /* TLSv1.2 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_2_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55083:3: warning: 'TLSv1_2_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_2_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1636:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_method(void)) /* TLSv1.2 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_2_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55097:3: warning: 'TLSv1_2_server_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_2_server_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1637:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_server_method(void)) /* TLSv1.2 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_2_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55107:3: warning: 'TLSv1_2_server_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_2_server_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1637:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_2_server_method(void)) /* TLSv1.2 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55121:3: warning: 'TLSv1_client_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_client_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1626:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_client_method(void)) /* TLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_client_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55131:3: warning: 'TLSv1_client_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_client_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1626:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_client_method(void)) /* TLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55145:3: warning: 'TLSv1_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1624:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_method(void)) /* TLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55155:3: warning: 'TLSv1_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1624:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_method(void)) /* TLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_TLSv1_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55169:3: warning: 'TLSv1_server_method' is deprecated [-Wdeprecated-declarations]
+       return TLSv1_server_method();
+       ^~~~~~
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1625:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_server_method(void)) /* TLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_TLSv1_server_method':
+    build/temp.linux-x86_64-2.7/_openssl.c:55179:3: warning: 'TLSv1_server_method' is deprecated [-Wdeprecated-declarations]
+       { result = TLSv1_server_method(); }
+       ^
+    In file included from /usr/include/openssl/ct.h:13:0,
+                     from /usr/include/openssl/ssl.h:61,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:546:
+    /usr/include/openssl/ssl.h:1625:1: note: declared here
+     DEPRECATEDIN_1_1_0(__owur const SSL_METHOD *TLSv1_server_method(void)) /* TLSv1.0 */
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_X509_CRL_get_lastUpdate':
+    build/temp.linux-x86_64-2.7/_openssl.c:56271:3: warning: 'X509_CRL_get_lastUpdate' is deprecated [-Wdeprecated-declarations]
+       return X509_CRL_get_lastUpdate(x0);
+       ^~~~~~
+    In file included from /usr/include/openssl/x509_vfy.h:20:0,
+                     from /usr/include/openssl/x509.h:309,
+                     from /usr/include/openssl/cms.h:16,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:708:1: note: declared here
+     DEPRECATEDIN_1_1_0(ASN1_TIME *X509_CRL_get_lastUpdate(X509_CRL *crl))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_X509_CRL_get_lastUpdate':
+    build/temp.linux-x86_64-2.7/_openssl.c:56294:3: warning: 'X509_CRL_get_lastUpdate' is deprecated [-Wdeprecated-declarations]
+       { result = X509_CRL_get_lastUpdate(x0); }
+       ^
+    In file included from /usr/include/openssl/x509_vfy.h:20:0,
+                     from /usr/include/openssl/x509.h:309,
+                     from /usr/include/openssl/cms.h:16,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:708:1: note: declared here
+     DEPRECATEDIN_1_1_0(ASN1_TIME *X509_CRL_get_lastUpdate(X509_CRL *crl))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_X509_CRL_get_nextUpdate':
+    build/temp.linux-x86_64-2.7/_openssl.c:56307:3: warning: 'X509_CRL_get_nextUpdate' is deprecated [-Wdeprecated-declarations]
+       return X509_CRL_get_nextUpdate(x0);
+       ^~~~~~
+    In file included from /usr/include/openssl/x509_vfy.h:20:0,
+                     from /usr/include/openssl/x509.h:309,
+                     from /usr/include/openssl/cms.h:16,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:709:1: note: declared here
+     DEPRECATEDIN_1_1_0(ASN1_TIME *X509_CRL_get_nextUpdate(X509_CRL *crl))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_X509_CRL_get_nextUpdate':
+    build/temp.linux-x86_64-2.7/_openssl.c:56330:3: warning: 'X509_CRL_get_nextUpdate' is deprecated [-Wdeprecated-declarations]
+       { result = X509_CRL_get_nextUpdate(x0); }
+       ^
+    In file included from /usr/include/openssl/x509_vfy.h:20:0,
+                     from /usr/include/openssl/x509.h:309,
+                     from /usr/include/openssl/cms.h:16,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:709:1: note: declared here
+     DEPRECATEDIN_1_1_0(ASN1_TIME *X509_CRL_get_nextUpdate(X509_CRL *crl))
+     ^
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_d_X509_get0_signature':
+    build/temp.linux-x86_64-2.7/_openssl.c:62091:23: warning: passing argument 1 of 'X509_get0_signature' from incompatible pointer type [-Wincompatible-pointer-types]
+       X509_get0_signature(x0, x1, x2);
+                           ^~
+    In file included from /usr/include/openssl/cms.h:16:0,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:552:6: note: expected 'const ASN1_BIT_STRING ** {aka const struct asn1_string_st **}' but argument is of type 'ASN1_OCTET_STRING ** {aka struct asn1_string_st **}'
+     void X509_get0_signature(const ASN1_BIT_STRING **psig,
+          ^~~~~~~~~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c:62091:27: warning: passing argument 2 of 'X509_get0_signature' from incompatible pointer type [-Wincompatible-pointer-types]
+       X509_get0_signature(x0, x1, x2);
+                               ^~
+    In file included from /usr/include/openssl/cms.h:16:0,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:552:6: note: expected 'const X509_ALGOR ** {aka const struct X509_algor_st **}' but argument is of type 'X509_ALGOR ** {aka struct X509_algor_st **}'
+     void X509_get0_signature(const ASN1_BIT_STRING **psig,
+          ^~~~~~~~~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c: In function '_cffi_f_X509_get0_signature':
+    build/temp.linux-x86_64-2.7/_openssl.c:62148:25: warning: passing argument 1 of 'X509_get0_signature' from incompatible pointer type [-Wincompatible-pointer-types]
+       { X509_get0_signature(x0, x1, x2); }
+                             ^~
+    In file included from /usr/include/openssl/cms.h:16:0,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:552:6: note: expected 'const ASN1_BIT_STRING ** {aka const struct asn1_string_st **}' but argument is of type 'ASN1_OCTET_STRING ** {aka struct asn1_string_st **}'
+     void X509_get0_signature(const ASN1_BIT_STRING **psig,
+          ^~~~~~~~~~~~~~~~~~~
+    build/temp.linux-x86_64-2.7/_openssl.c:62148:29: warning: passing argument 2 of 'X509_get0_signature' from incompatible pointer type [-Wincompatible-pointer-types]
+       { X509_get0_signature(x0, x1, x2); }
+                                 ^~
+    In file included from /usr/include/openssl/cms.h:16:0,
+                     from build/temp.linux-x86_64-2.7/_openssl.c:477:
+    /usr/include/openssl/x509.h:552:6: note: expected 'const X509_ALGOR ** {aka const struct X509_algor_st **}' but argument is of type 'X509_ALGOR ** {aka struct X509_algor_st **}'
+     void X509_get0_signature(const ASN1_BIT_STRING **psig,
+          ^~~~~~~~~~~~~~~~~~~
+    error: command 'x86_64-linux-gnu-gcc' failed with exit status 1
+    
+    ----------------------------------------
+  Rolling back uninstall of cryptography
+  Moving to /usr/lib/python2.7/dist-packages/cryptography
+   from /usr/lib/python2.7/dist-packages/~ryptography
+  Moving to /usr/lib/python2.7/dist-packages/cryptography-2.1.4.egg-info
+   from /usr/lib/python2.7/dist-packages/~ryptography-2.1.4.egg-info
+Command "/usr/bin/python -u -c "import setuptools, tokenize;__file__='/tmp/pip-install-Xc8lEE/cryptography/setup.py';f=getattr(tokenize, 'open', open)(__file__);code=f.read().replace('\r\n', '\n');f.close();exec(compile(code, __file__, 'exec'))" install --record /tmp/pip-record-_j4fLf/install-record.txt --single-version-externally-managed --compile" failed with error code 1 in /tmp/pip-install-Xc8lEE/cryptography/
++inc/python:pip_install:1                  exit_trap
++./stack.sh:exit_trap:494                  local r=1
+++./stack.sh:exit_trap:495                  jobs -p
++./stack.sh:exit_trap:495                  jobs=
++./stack.sh:exit_trap:498                  [[ -n '' ]]
++./stack.sh:exit_trap:504                  kill_spinner
++./stack.sh:kill_spinner:390               '[' '!' -z '' ']'
++./stack.sh:exit_trap:506                  [[ 1 -ne 0 ]]
++./stack.sh:exit_trap:507                  echo 'Error on exit'
+Error on exit
++./stack.sh:exit_trap:508                  generate-subunit 1550819787 152 fail
++./stack.sh:exit_trap:509                  [[ -z /opt/stack/logs ]]
++./stack.sh:exit_trap:512                  /opt/stack/devstack/tools/worlddump.py -d /opt/stack/logs
+World dumping... see /opt/stack/logs/worlddump-2019-02-22-071859.txt for details
++./stack.sh:exit_trap:518                  exit 1
