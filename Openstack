@@ -40,3 +40,11 @@ ipconfig /flushdns
 
 Linux:
 /etc/init.d/nscd restart
+
+
+目前成功率比较高的是 Ocata版本：
+-b stable/ocata
+
+同时在local.conf中加入下面两行：
+enable_service placement-api 
+enable_service placement-client
