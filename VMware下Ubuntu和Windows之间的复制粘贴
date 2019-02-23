@@ -1,0 +1,8 @@
+如何实现VMware下Ubuntu和Windows之间的复制粘贴
+
+第一步，打开虚拟机（我使用的虚拟机是ubuntu-16.04-desktop-amd64）
+第二步，点击菜单栏中的虚拟机->安装VMware Tools。这一步要注意的是，如果你之前安装过，这个选项将会变成“更新VMware Tools”。
+第三步，点击后，会在Ubuntu系统中找到VMwareTools-10.0.10-4301679.tar.gz。将这个文件复制到桌面上，再点击Extract here，桌面上将会出现一个文件夹：vmware-tools-distrib
+第四步，打开Terminal终端窗口，先输入sudo su，再输入密码，然后再输入cd vmware-tools-distrib，最后输入sudo ./vmware-install.pl开始安装。
+第五步，开始安装后，一路按回车键确认，直到安装完毕。
+安装结束后，输入reboot重启系统就OK了。
