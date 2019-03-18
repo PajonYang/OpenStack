@@ -1,3 +1,20 @@
+请定义一个函数quadratic(a, b, c)，接收3个参数，返回一元二次方程：
+ax2 + bx + c = 0
+的两个解。
+提示：计算平方根可以调用math.sqrt()函数：
+import math
+
+def quadratic(a, b, c):
+    if a!=0 and b**2-4*a*c>=0:
+        x1=(-b + math.sqrt(b**2-4*a*c))/(2*a)
+        x2=(-b - math.sqrt(b**2-4*a*c))/(2*a)
+        return x1,x2
+    else:
+        print('fail')
+
+x=quadratic(1,2,1)
+print(x)
+
 https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431752945034eb82ac80a3e64b9bb4929b16eeed1eb9000
 以下函数允许计算两个数的乘积，请稍加改造，变成可接收一个或多个数并计算乘积：
 
