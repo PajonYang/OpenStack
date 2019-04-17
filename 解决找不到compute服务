@@ -1,0 +1,25 @@
+Start by checking nova-compute.log on the compute node. The error message in your screenshot is cut off so I can't see the full message, 
+but it looks like nova-compute is unable to connect to RabbitMQ. You might want to check rabbitmq logs also.
+
+why the compute node cannot talk to my controller node and rabbitmq server?
+
+transpot_url = rabbit://openstack:RABBIT_PASS@controller
+
+
+Check rabbitmq connection in nova-compute host telnet, config options, errors in nova-compute.log
+
+Typical scenarios: No time synchronization between controller and compute node, or wrong message queue credentials 
+configured, or no network connection (e.g. firewall).
+
+Solved this problem by finding that my compute node did not install the correct nova-compute version. 
+I find no such file "/etc/apt/sources.list.d/cloudarchive-kilo.list". So I missed this step when installing compute node. 
+So I reinstall the nova-compute by specifying the correct package and finally it works.
+(check out the official installation guide: http://docs.openstack.org/kilo/instal...).
+
+
+After i moved 
+[oslo_messaging_rabbit]
+rabbit_host = controller 
+rabbit_userid = openstack
+rabbit_password = RABBIT_PASS
+to [DEFAULT] section, i got |5| nova-compute status "enabled" state "Up" but, later it changed state to "down".
